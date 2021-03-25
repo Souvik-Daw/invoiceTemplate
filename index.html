@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	
+	<title>Invoice</title>
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+	<link rel='stylesheet' type='text/css' href='css/print.css' media="print" />
+	<script type='text/javascript' src='js/jquery-1.3.2.min.js'></script>
+	<script type='text/javascript' src='js/example.js'></script>
+
+</head>
+
+<body>
+
+	<div id="page-wrap">
+
+		<textarea id="header">T.M INFOTECH SOLUTIONS</textarea>
+		
+		<div id="identity">
+		
+            <textarea id="address">Dhulagori, Sankrail
+Howrah, West Bengal - 711313
+Name : TMIS
+Phone : 9874074080
+Email : tminfosolution@gmail.com
+Website : www.tmis.in
+</textarea>
+
+            <div id="logo">
+
+              <div id="logoctr">
+                <a href="javascript:;" id="change-logo" title="Change logo">Change Logo</a>
+                <a href="javascript:;" id="save-logo" title="Save changes">Save</a>
+                |
+                <a href="javascript:;" id="delete-logo" title="Delete logo">Delete Logo</a>
+                <a href="javascript:;" id="cancel-logo" title="Cancel changes">Cancel</a>
+              </div>
+
+              <div id="logohelp">
+                <input id="imageloc" type="text" size="50" value="" /><br />
+                (max width: 540px, max height: 100px)
+              </div>
+              <img id="image" src="images/srk.jpg" height="200px" width="200px" alt="logo" />
+            </div>
+		
+		</div>
+		
+		<div style="clear:both"></div>
+		
+		<div id="customer">
+
+            
+            
+		
+		</div>
+		<table border="1" width="100%">
+			<tr>
+				<th>
+					<pre>GSTIN : 19AQBPG5298F1ZO                         TAX INVOICE                     ORIGINAL FOR RECIPIENT</pre>
+				</th>
+			</tr>
+
+
+		</table>
+		<table border="1" width="100%">
+			<tr>
+				<td>
+					<table border="1" width="100%">
+						<tr>
+							<td>Customer Detail</td>
+						</tr>
+
+						<tr>
+							<td>
+
+								<textarea id="address">
+M/S Bauria Girls High School
+Address- East Burikhali, Bauria, Howrah, West
+Bengal - 711310
+PHONE 9123909961
+GSTIN -
+Place of-  West Bengal ( 19 )
+ Supply</textarea>
+							</td>
+
+						</tr>
+
+					</table>
+
+				</td>
+				<td>
+					<pre style="
+					padding-bottom: 190px;
+				"> Invoice No.  TMIS/20-21/1028   Date 04-Sep-2020</pre>
+				</td>
+
+			</tr>
+
+		</table>
+		
+		
+		<table id="items">
+		
+		  <tr>
+		      <th>Sr.No.</th>
+		      <th>Name of Product / Service</th>
+		      <th>HSN / SAC</th>
+		      <th>Qty</th>
+		      <th>Rate</th>
+			  <th>Taxable Value</th>
+			  <th>CGST %</th>
+			  <th>CGST Amount</th>
+			  <th>SGST %</th>
+			  <th>SGST Amount</th>
+			  <th>Total</th>
+		  </tr>
+		  
+		 
+		  
+		  <tr class="item-row">
+		      <td class="item-name"><div class="delete-wpr"><textarea>1</textarea><a class="delete" href="javascript:;" title="Remove row">X</a></div></td>
+
+		      <td class="description"><textarea>banglar Shiksha Website Developing</textarea></td>
+			  <td class="description"><textarea>---</textarea></td>
+			  <td><textarea class="qty">1</textarea></td>
+		      <td><textarea class="cost">5500.00</textarea></td>
+			  <td class="description"><textarea>5500.00</textarea></td>
+			  <td class="description"><textarea>  -</textarea></td>
+			  <td class="description"><textarea>  -</textarea></td>
+			  <td class="description"><textarea>  -</textarea></td>
+			  <td class="description"><textarea>  -</textarea></td>
+		      
+		      <td><span class="price">5500.00</span></td>
+		  </tr>
+		  <tr id="hiderow">
+		    <td colspan="20"><button id="addrow" href="javascript:;" title="Add a row" class="btn">Add a row</button></td>
+		  </tr>
+		</table>
+		<br>
+		<br>
+		<table border="1" width="100%">
+			<tr>
+				<th>
+					<pre>Total in words</pre>
+				</th>
+				<th>
+					<pre>Taxable amount                                   5500.00</pre>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<pre>Five thousand five hundred rupees only.</pre>
+				</td>
+				<td>
+					<table border="1" width="100%">
+						<tr>
+							<td>
+								<pre>Add:cgst </pre>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<pre>Add:sgst </pre>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<pre>Bank Details</pre>
+				</td>
+				<td>
+					<pre>Total Tax                                   0.00</pre>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<pre>Bank Name   PASCHIM BANGA GRAMIN BANK
+Branch Name   SANKRAILJALA
+Bank Account Number    10630210000204
+Bank Branch IFSC    UCBA0RRBPBG</pre>
+				</td>
+				<td>
+					<table border="1" width="100%">
+						<tr>
+							<td>
+								<pre>Total Amount after tax          5500.00</pre>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<pre>                 (E & O.E.)</pre>
+							</td>
+						</tr>
+
+						<tr>
+							<table border="1" width="100%">
+								<tr>
+									<td>
+										<pre>gst payable on reverse charge</pre>
+									</td>
+									<td>
+										<pre>N/A</pre>
+									</td>
+
+								</tr>
+
+							</table>
+
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+
+		</table>
+		<table border="1" width="100%">
+			<tr>
+				<td>
+					<pre>Terms and Conditions</pre>
+				</td>
+				<td>
+					<pre>
+Certified that the particulars given above 
+are true and correct.
+ For T.M INFOTECH SOLUTION </pre>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<pre>1. Subject to our home Jurisdiction.
+2. Our Responsibility Ceases as soon
+as goods leaves our Premises.
+3. Goods once sold will not taken back.
+4. Delivery Ex-Premises.</pre>
+				</td>
+				<td>
+					<pre>
+
+
+				</pre>
+					<hr>
+					<pre>Authorised Signatory</pre>
+				</td>
+
+
+
+
+			</tr>
+		</table>
+		
+		
+		
+	
+	</div>
+	
+</body>
+
+</html>
